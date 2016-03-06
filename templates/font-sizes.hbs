@@ -1,0 +1,27 @@
+<section>
+   <h2>Font sizes</h2>
+
+   {{#if scaledFontSizes}}
+   <section>
+      <h3>Scaled font sizes ({{scaledFontSizes.length}})</h3>
+
+      <ul class="list-reset font-sizes">
+         {{#each scaledFontSizes}}
+         <li class="font-size" style="font-size: {{this.[0]}}">Font size {{this.[1]}}</li>
+         {{/each}}
+      </ul>
+   </section>
+   {{/if}}
+
+   {{#if nonScaledFontSizes}}
+   <section>
+      <h3>Non-scaled font sizes ({{nonScaledFontSizes.length}})</h3>
+
+      <ul class="list-reset font-sizes">
+         {{#each nonScaledFontSizes}}
+         <li class="font-size">Font size {{this.[1]}}</li>
+         {{/each}}
+      </ul>
+   </section>
+   {{/if}}
+</section>

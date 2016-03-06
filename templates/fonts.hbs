@@ -1,0 +1,27 @@
+<section>
+   <h2>Fonts</h2>
+
+   {{#if fontsInUse}}
+   <section>
+      <h3>Fonts in use ({{fontsInUse.length}})</h3>
+
+      <ul class="font-families">
+         {{#each fontsInUse}}
+         <li class="font-family" style="font-family: {{this.[0]}}">{{{this.[1]}}}</li>
+         {{/each}}
+      </ul>
+   </section>
+   {{/if}}
+
+   {{#if fontsNotInUse}}
+   <section>
+      <h3>Fonts declared but not in use ({{fontsNotInUse.length}})</h3>
+
+      <ul class="font-families">
+         {{#each fontsNotInUse}}
+         <li class="font-family" style="font-family: {{this.[0]}}">{{{this.[1]}}}</li>
+         {{/each}}
+      </ul>
+   </section>
+   {{/if}}
+</section>

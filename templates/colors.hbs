@@ -1,0 +1,12 @@
+<section>
+   <h2>Colors ({{this.length}})</h2>
+
+   <div class="clearfix colors">
+      {{#each this}}
+      <div class="color">
+         <h3 class="color__name">{{this}}</h3>
+         <div class="color__value" style="background: {{this}}"></div>
+      </div>
+      {{/each}}
+   </div>
+</section>
