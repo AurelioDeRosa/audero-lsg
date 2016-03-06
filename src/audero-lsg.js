@@ -2,6 +2,7 @@
 'use strict';
 
 var fs = require('fs');
+var path = require('path');
 var CSSParser = require('css');
 var cssstats = require('cssstats');
 var Handlebars = require('Handlebars');
@@ -446,19 +447,19 @@ StyleGuide.prototype.getSpacings = function() {
  */
 StyleGuide.prototype.generateStyleGuide = function() {
    var styleGuideTemplate = Handlebars.compile(
-      fs.readFileSync('templates/index.hbs', 'utf8')
+      fs.readFileSync(path.resolve(__dirname, '../templates/index.hbs'), 'utf8')
    );
    var colorsTemplate = Handlebars.compile(
-      fs.readFileSync('templates/colors.hbs', 'utf8')
+      fs.readFileSync(path.resolve(__dirname, '../templates/colors.hbs'), 'utf8')
    );
    var fontSizesTemplate = Handlebars.compile(
-      fs.readFileSync('templates/font-sizes.hbs', 'utf8')
+      fs.readFileSync(path.resolve(__dirname, '../templates/font-sizes.hbs'), 'utf8')
    );
    var fontFamiliesTemplate = Handlebars.compile(
-      fs.readFileSync('templates/fonts.hbs', 'utf8')
+      fs.readFileSync(path.resolve(__dirname, '../templates/fonts.hbs'), 'utf8')
    );
    var spacingsTemplate = Handlebars.compile(
-      fs.readFileSync('templates/spacings.hbs', 'utf8')
+      fs.readFileSync(path.resolve(__dirname, '../templates/spacings.hbs'), 'utf8')
    );
 
    var fontUrls = this.getFontUrls();
