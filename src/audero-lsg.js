@@ -1,4 +1,4 @@
-/*! Audero LSG 0.1.0 | Aurelio De Rosa (@AurelioDeRosa) | MIT/GPL-3.0 Licensed */
+/*! Audero LSG 0.1.1 | Aurelio De Rosa (@AurelioDeRosa) | MIT/GPL-3.0 Licensed */
 'use strict';
 
 var fs = require('fs');

@@ -1,6 +1,6 @@
 {
   "name": "audero-lsg",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Audero LSG is a Node.js utility to create a living style guide from CSS files",
   "main": "src/audero-lsg.js",
   "repository": {
